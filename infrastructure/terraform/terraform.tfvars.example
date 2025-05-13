@@ -1,0 +1,11 @@
+resource_group_name = "augur-rg"
+location           = "eastus"
+static_web_app_name = "augur-dashboard"
+repository_url     = "https://github.com/your-username/augur-dashboard"
+repository_branch  = "main"
+
+tags = {
+  environment = "production"
+  application = "augur-dashboard"
+  owner       = "augur-team"
+} 

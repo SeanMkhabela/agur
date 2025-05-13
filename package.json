@@ -6,7 +6,12 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "export": "next export",
+        "test": "echo \"No tests specified\" && exit 0",
+        "ci:lint": "next lint --max-warnings=0",
+        "ci:build": "next build",
+        "ci:test": "npm run test"
     },
     "dependencies": {
         "@heroicons/react": "^2.0.18",

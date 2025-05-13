@@ -1,0 +1,22 @@
+{
+    "routes": [{
+            "route": "/distributors/*",
+            "serve": "/distributors/[id].html",
+            "statusCode": 200
+        },
+        {
+            "route": "/tailwind-test",
+            "serve": "/tailwind-test.html",
+            "statusCode": 200
+        },
+        {
+            "route": "/*",
+            "serve": "/index.html",
+            "statusCode": 200
+        }
+    ],
+    "platformErrorOverrides": [{
+        "errorType": "NotFound",
+        "serve": "/404.html"
+    }]
+}
